@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		53D06CBC23FE55E300F0C0D0 /* test1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 53D06CBA23FE55E300F0C0D0 /* test1.mp4 */; };
+		53D06CBD23FE55E300F0C0D0 /* test2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 53D06CBB23FE55E300F0C0D0 /* test2.mp4 */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -38,6 +40,8 @@
 
 /* Begin PBXFileReference section */
 		4D638216B3D8D58E3BC5B8E4 /* JZVideoPlayer.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = JZVideoPlayer.podspec; path = ../JZVideoPlayer.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		53D06CBA23FE55E300F0C0D0 /* test1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = test1.mp4; sourceTree = "<group>"; };
+		53D06CBB23FE55E300F0C0D0 /* test2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = test2.mp4; sourceTree = "<group>"; };
 		596632823165E8DE27C7F765 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* JZVideoPlayer_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JZVideoPlayer_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -143,6 +147,8 @@
 		6003F593195388D20070C39A /* Example for JZVideoPlayer */ = {
 			isa = PBXGroup;
 			children = (
+				53D06CBA23FE55E300F0C0D0 /* test1.mp4 */,
+				53D06CBB23FE55E300F0C0D0 /* test2.mp4 */,
 				6003F59C195388D20070C39A /* JZAppDelegate.h */,
 				6003F59D195388D20070C39A /* JZAppDelegate.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
@@ -278,6 +284,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
+				53D06CBC23FE55E300F0C0D0 /* test1.mp4 in Resources */,
+				53D06CBD23FE55E300F0C0D0 /* test2.mp4 in Resources */,
 				71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
