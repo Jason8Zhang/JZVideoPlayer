@@ -13,16 +13,16 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  设置视频播放填充模式
  */
-typedef NS_ENUM(NSInteger, YWWriterPlayerContentMode) {
-    YWWriterPlayerContentModeResizeFit,//尺寸适合
-    YWWriterPlayerContentModeResizeFitFill,//填充视图
-    YWWriterPlayerContentModeResize,//默认
+typedef NS_ENUM(NSInteger, JZPlayerContentMode) {
+    JZPlayerContentModeResizeFit,//尺寸适合
+    JZPlayerContentModeResizeFitFill,//填充视图
+    JZPlayerContentModeResize,//默认
 };
-typedef NS_ENUM(NSInteger, YWWriterPlayerState) {
-    YWWriterPlayerStateFailed,        // 播放失败
-    YWWriterPlayerStateBuffering,     // 缓冲中
-    YWWriterPlayerStatePlaying,       // 播放中
-    YWWriterPlayerStateStopped,        //停止播放
+typedef NS_ENUM(NSInteger, JZPlayerState) {
+    JZPlayerStateFailed,        // 播放失败
+    JZPlayerStateBuffering,     // 缓冲中
+    JZPlayerStatePlaying,       // 播放中
+    JZPlayerStateStopped,        //停止播放
 };
 
 @interface JZVideoPlayerView : UIView
@@ -32,9 +32,9 @@ typedef NS_ENUM(NSInteger, YWWriterPlayerState) {
 //加载的image;
 @property(nonatomic, strong) UIImageView *imageViewLogin;
 //视频填充模式
-@property(nonatomic, assign) YWWriterPlayerContentMode contentMode;
+@property(nonatomic, assign) JZPlayerContentMode contentMode;
 //播放状态
-@property(nonatomic, assign) YWWriterPlayerState state;
+@property(nonatomic, assign) JZPlayerState state;
 //加载视图
 //@property (nonatomic,strong) SBPlayerLoading *loadingView;
 //是否正在播放

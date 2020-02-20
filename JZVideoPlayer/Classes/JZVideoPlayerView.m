@@ -6,6 +6,7 @@
 //
 
 #import "JZVideoPlayerView.h"
+#import <Masonry/Masonry.h>
 
 @interface JZVideoPlayerView () {
     NSURL *_url;
@@ -163,13 +164,13 @@
         switch (status) {
             case AVPlayerStatusUnknown: {
                 NSLog(@"未知状态");
-                self.state = YWWriterPlayerStateBuffering;
+                self.state = JZPlayerStateBuffering;
                 [self showaAtivityInDicatorView:NO];
             }
                 break;
             case AVPlayerStatusReadyToPlay: {
                 NSLog(@"开始播放状态");
-                self.state = YWWriterPlayerStatePlaying;
+                self.state = JZPlayerStatePlaying;
                 //总时长
                 self.totalDuration = self.item.duration.value / self.item.duration.timescale;
                 //转换成时间格式的总时长
@@ -178,7 +179,7 @@
             }
                 break;
             case AVPlayerStatusFailed:
-                self.state = YWWriterPlayerStateFailed;
+                self.state = JZPlayerStateFailed;
                 NSLog(@"播放失败");
                 [self showaAtivityInDicatorView:NO];
                 break;
@@ -196,7 +197,7 @@
         //缓存值
         //        self.playerControl.bufferValue=timeInterval / totalDuration;
     } else if ([keyPath isEqualToString:@"playbackBufferEmpty"]) { //监听播放器在缓冲数据的状态
-        self.state = YWWriterPlayerStateBuffering;
+        self.state = JZPlayerStateBuffering;
         NSLog(@"缓冲不足暂停");
     } else if ([keyPath isEqualToString:@"playbackLikelyToKeepUp"]) {
         NSLog(@"缓冲达到可播放");
@@ -255,16 +256,16 @@
 }
 
 //设置视频填充模式
-- (void)setContentMode:(YWWriterPlayerContentMode)contentMode {
+- (void)setContentMode:(JZPlayerContentMode)contentMode {
 
     switch (contentMode) {
-        case YWWriterPlayerContentModeResizeFit:
+        case JZPlayerContentModeResizeFit:
             self.playerLayer.videoGravity = AVLayerVideoGravityResizeAspect;
             break;
-        case YWWriterPlayerContentModeResizeFitFill:
+        case JZPlayerContentModeResizeFitFill:
             self.playerLayer.videoGravity = AVLayerVideoGravityResizeAspectFill;
             break;
-        case YWWriterPlayerContentModeResize:
+        case JZPlayerContentModeResize:
             self.playerLayer.videoGravity = AVLayerVideoGravityResize;
             break;
     }
