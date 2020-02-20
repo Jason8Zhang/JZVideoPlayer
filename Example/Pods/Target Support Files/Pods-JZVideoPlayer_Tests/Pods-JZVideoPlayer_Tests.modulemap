@@ -1,0 +1,6 @@
+framework module Pods_JZVideoPlayer_Tests {
+  umbrella header "Pods-JZVideoPlayer_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

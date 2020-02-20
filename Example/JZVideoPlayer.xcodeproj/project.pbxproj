@@ -37,8 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		4D638216B3D8D58E3BC5B8E4 /* JZVideoPlayer.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = JZVideoPlayer.podspec; path = ../JZVideoPlayer.podspec; sourceTree = "<group>"; };
-		596632823165E8DE27C7F765 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		4D638216B3D8D58E3BC5B8E4 /* JZVideoPlayer.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = JZVideoPlayer.podspec; path = ../JZVideoPlayer.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		596632823165E8DE27C7F765 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* JZVideoPlayer_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JZVideoPlayer_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -62,7 +62,7 @@
 		725B954FC7E594D8848B3CF5 /* Pods-JZVideoPlayer_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JZVideoPlayer_Example.release.xcconfig"; path = "Target Support Files/Pods-JZVideoPlayer_Example/Pods-JZVideoPlayer_Example.release.xcconfig"; sourceTree = "<group>"; };
 		759CA003C138FD537F6356F8 /* Pods-JZVideoPlayer_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JZVideoPlayer_Example.debug.xcconfig"; path = "Target Support Files/Pods-JZVideoPlayer_Example/Pods-JZVideoPlayer_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		B6AB7198D06668D2D500A79A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		B6AB7198D06668D2D500A79A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		B7C7F444D56C44A651F9EF8C /* Pods-JZVideoPlayer_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JZVideoPlayer_Tests.release.xcconfig"; path = "Target Support Files/Pods-JZVideoPlayer_Tests/Pods-JZVideoPlayer_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		BF66A070AD04CF005785D9CA /* Pods_JZVideoPlayer_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JZVideoPlayer_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA3B1F4B986A7FD02E9E4633 /* Pods_JZVideoPlayer_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JZVideoPlayer_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -103,7 +103,6 @@
 				DF2A0C5E7F5A3053D3975F5E /* Pods-JZVideoPlayer_Tests.debug.xcconfig */,
 				B7C7F444D56C44A651F9EF8C /* Pods-JZVideoPlayer_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -258,6 +257,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -347,10 +347,12 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-JZVideoPlayer_Example/Pods-JZVideoPlayer_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/JZVideoPlayer/JZVideoPlayer.framework",
+				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JZVideoPlayer.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

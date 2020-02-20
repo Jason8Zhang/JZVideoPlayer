@@ -1,0 +1,27 @@
+{
+  "name": "JZVideoPlayer",
+  "version": "0.1.0",
+  "summary": "A short description of JZVideoPlayer.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/jason8zhang/JZVideoPlayer",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "jason8zhang": "zhangzexin@yuewen.com"
+  },
+  "source": {
+    "git": "https://github.com/jason8zhang/JZVideoPlayer.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "JZVideoPlayer/Classes/**/*",
+  "dependencies": {
+    "Masonry": [
+
+    ]
+  }
+}
